@@ -67,7 +67,7 @@ class Product extends Component {
       (data) => {
         console.log(data); // JSON data parsed by `data.json()` call
         if (!data.error) {
-          self.setState({products:data.data})
+          self.setState({products:data.data,edit:false})
         } else {
           alert(data.userMessage);
         }
